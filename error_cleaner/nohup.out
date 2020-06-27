@@ -1,0 +1,38 @@
+  File "remover_bot.py", line 10
+    def del(i):
+          ^
+SyntaxError: invalid syntax
+  File "remover_bot.py", line 10
+    def del(i):
+          ^
+SyntaxError: invalid syntax
+Traceback (most recent call last):
+  File "remover_bot.py", line 25, in <module>
+    cleaner(i)
+  File "remover_bot.py", line 13, in cleaner
+    bot0.delete_message('@eduporossii', i)
+  File "/home/tolya/.local/lib/python3.7/site-packages/telebot/__init__.py", line 622, in delete_message
+    return apihelper.delete_message(self.token, chat_id, message_id)
+  File "/home/tolya/.local/lib/python3.7/site-packages/telebot/apihelper.py", line 713, in delete_message
+    return _make_request(token, method_url, params=payload, method='post')
+  File "/home/tolya/.local/lib/python3.7/site-packages/telebot/apihelper.py", line 60, in _make_request
+    return _check_result(method_name, result)['result']
+  File "/home/tolya/.local/lib/python3.7/site-packages/telebot/apihelper.py", line 79, in _check_result
+    raise ApiException(msg, method_name, result)
+telebot.apihelper.ApiException: A request to the Telegram API was unsuccessful. The server returned HTTP 400 Bad Request. Response body:
+[b'{"ok":false,"error_code":400,"description":"Bad Request: message to delete not found"}']
+Traceback (most recent call last):
+  File "remover_bot.py", line 25, in <module>
+    cleaner(i)
+  File "remover_bot.py", line 13, in cleaner
+    bot0.delete_message('@eduporossii', i)
+  File "/home/tolya/.local/lib/python3.7/site-packages/telebot/__init__.py", line 622, in delete_message
+    return apihelper.delete_message(self.token, chat_id, message_id)
+  File "/home/tolya/.local/lib/python3.7/site-packages/telebot/apihelper.py", line 713, in delete_message
+    return _make_request(token, method_url, params=payload, method='post')
+  File "/home/tolya/.local/lib/python3.7/site-packages/telebot/apihelper.py", line 60, in _make_request
+    return _check_result(method_name, result)['result']
+  File "/home/tolya/.local/lib/python3.7/site-packages/telebot/apihelper.py", line 79, in _check_result
+    raise ApiException(msg, method_name, result)
+telebot.apihelper.ApiException: A request to the Telegram API was unsuccessful. The server returned HTTP 400 Bad Request. Response body:
+[b'{"ok":false,"error_code":400,"description":"Bad Request: message to delete not found"}']
